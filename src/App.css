@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*navbar*/
+
+.navbar {
+  background-color: white;
+    justify-content: right;
+    align-items: right;
+    margin-top: 5%;
+
+}
+
+.navbar {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.navbar {
+  float: left;
+  padding-left: 10px;
+    
+}
+
+.navbar a {
+  display: inline-block;
+  color: black;
+  font-family: century gothic; 
+  font-size: 17;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-spacing: 40%;
+}
+
+.navbar a:hover {
+  background-color: #0abab5;
+  border-radius: 40%;
+}
+
+/*grid row*/
+.image-grid {
+    display: grid;
+    grid-row-gap: 5%;
+    padding-top: 20%; 
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+
+img {
+    height: 17vh;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    margin-left: -168%;
+}
+
+.img1 {
+    border-style: solid;
+    border-color: #0abab5;
+    
+}
+
+.img2 {
+    border-style: solid;
+    background-color: #0abab5;
+    border-color: #0abab5;
+    
+}
+
+.img3 {
+    text-align: center;
+    opacity: .30;
+}
+
+/*paragraph*/
+
+
+
+#leftside, #middle, #rightside {
+    height: 110vh;
+    
+}
+
+#leftside {
+    background-color: white;
+    float: left;
+    width: 40%;
+    
+}
+
+#middle {
+    width: 60%;
+    margin-top: -60%;
+    margin-left: 40%;
+}
+
+#rightside {
+    background-color: #0abab5;
+    float: right;
+    width: 55%;
+    border-bottom-left-radius: 30% 50%;
+    border-top-left-radius: 30% 50%;
+    
+}
+
+.home-text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.primary-heading {
+  font-size: clamp(1rem, 3vw, 4rem);
+  font-style: bold;
+  font-family: century gothic;
+  color: #4c4c4c;
+  max-width: 600px;
+}
+.primary-text {
+  font-size: clamp(1rem, 1vw);
+  max-width: 500px;
+  color: #6a6a6a;
+  margin: 1.5rem 0rem;
+}
+
+.price-text {
+  font-family: century gothic;
+  font-style: bold;
+  color: #fe9e0d;
+  opacity: 60%;
+}
+
+.buyBtn {
+  padding: 1rem 2.5rem;
+  background-color: #fe9e0d;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: 0.2s;
+  display: flex;
+  margin-top: 10%;
+}
+
+.buyBtn:hover {
+  background-color: rgb(240, 211, 158);
+}
+
+.plusBtn {
+  border: none;
+  font-size: 1.1rem;
+
+  background-color: #fff;
+}
+
+.offlineBtn {
+  border: none;
+  font-size: 1.1rem;
+  background-color: #fff;
+}
+
+
+
+.rightHead {
+    color: white;
+    font-family: century gothic;
+    font-size: 43vh;
+    text-align: inherit;
+    margin-top: 25%;
+    float: right;
+    transform: rotate(90deg);
+    position:relative; left: 270px;
+    opacity: .20;
+}
+
+.div2img {
+    position: relative; 
+    top: -500px;
+    margin-left: 5%;
+    height: 80vh;
+    
+}
