@@ -1,67 +1,52 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
-/*navbar*/
 
 .navbar {
-  background-color: white;
-    justify-content: right;
-    align-items: right;
-    margin-top: 5%;
-
+  display: flex;
+  flex-direction: row;
+  font-family: 'Franklin Gothic Medium', century gothic; 
+  justify-content: space-evenly;
+  margin-top: 9px;
 }
 
-.navbar {
-  list-style-type: none;
-  overflow: hidden;
-}
-
-.navbar {
-  float: left;
-  padding-left: 10px;
-    
-}
 
 .navbar a {
-  display: inline-block;
   color: black;
-  font-family: century gothic; 
-  font-size: 17;
-  text-align: center;
-  padding: 14px 16px;
+  text-align: end;
   text-decoration: none;
   transition: all 0.3s ease;
-  border-spacing: 40%;
+} 
+
+.home {
+  
 }
 
 .navbar a:hover {
   background-color: #0abab5;
-  border-radius: 40%;
-}
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 40px;
+  color: white;
+} 
 
-/*grid row*/
+
 .image-grid {
-    display: grid;
-    grid-row-gap: 5%;
-    padding-top: 20%; 
-    object-fit: cover;
-    object-position: center;
-    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 22%; 
+    width: 180px;
+    justify-content: space-around;
 }
 
 
 img {
-    height: 17vh;
     border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
-    margin-left: -168%;
+    border-bottom-right-radius: 20%; 
 }
 
 .img1 {
     border-style: solid;
     border-color: #0abab5;
+    margin-bottom: 8%;
     
 }
 
@@ -69,49 +54,74 @@ img {
     border-style: solid;
     background-color: #0abab5;
     border-color: #0abab5;
-    
+    margin-bottom: 10%;
+}
+
+.sold-out-container {
+  display: flex;
+  position: relative;
 }
 
 .img3 {
-    text-align: center;
-    opacity: .30;
+  border-style: solid;
+  border-color: white;
+    opacity: .28;
+    width: 180px;
 }
 
-/*paragraph*/
-
-
-
-#leftside, #middle, #rightside {
-    height: 110vh;
-    
+.sold-out-text {
+  position: absolute;
+  left: 60px;
+  font-size: 13px;
+  align-self: center;
 }
 
-#leftside {
+
+.leftside {
     background-color: white;
     float: left;
     width: 40%;
-    
 }
 
-#middle {
+.middle {
     width: 60%;
-    margin-top: -60%;
+    margin-top: -100%;
     margin-left: 40%;
+    height: 100%;
 }
 
-#rightside {
+.rightside {
+    display: flex;
     background-color: #0abab5;
     float: right;
     width: 55%;
-    border-bottom-left-radius: 30% 50%;
-    border-top-left-radius: 30% 50%;
-    
+    height: 98vh;
+    border-bottom-left-radius: 40% 100% ;
+    border-top-left-radius:40% 100% ;
+}
+
+.rightHead {
+  color: white;
+  font-family: century gothic;
+  font-size: 28vh;
+  transform: rotate(90deg);
+  opacity: .20;
+  margin-left: 30%;
+}
+
+.div2img {
+  display: flex;
+  align-self: center;
+  translate: -1050px 50px;
+  height: 80vh;
 }
 
 .home-text-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  
+  /* margin-bottom: 20%; */
 }
 
 .primary-heading {
@@ -120,6 +130,7 @@ img {
   font-family: century gothic;
   color: #4c4c4c;
   max-width: 600px;
+  padding-top: -80%;
 }
 .primary-text {
   font-size: clamp(1rem, 1vw);
@@ -128,11 +139,14 @@ img {
   margin: 1.5rem 0rem;
 }
 
+
+
 .price-text {
   font-family: century gothic;
   font-style: bold;
   color: #fe9e0d;
   opacity: 60%;
+  padding-top: 2%;
 }
 
 .buyBtn {
@@ -147,7 +161,7 @@ img {
   color: white;
   transition: 0.2s;
   display: flex;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .buyBtn:hover {
@@ -157,7 +171,7 @@ img {
 .plusBtn {
   border: none;
   font-size: 1.1rem;
-
+  padding-top: 4%;
   background-color: #fff;
 }
 
@@ -165,26 +179,5 @@ img {
   border: none;
   font-size: 1.1rem;
   background-color: #fff;
-}
-
-
-
-.rightHead {
-    color: white;
-    font-family: century gothic;
-    font-size: 43vh;
-    text-align: inherit;
-    margin-top: 25%;
-    float: right;
-    transform: rotate(90deg);
-    position:relative; left: 270px;
-    opacity: .20;
-}
-
-.div2img {
-    position: relative; 
-    top: -500px;
-    margin-left: 5%;
-    height: 80vh;
-    
+  padding-top: 25%;
 }

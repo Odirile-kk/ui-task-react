@@ -8,32 +8,33 @@ import {GrFormAdd} from "react-icons/gr";
 const Home = () => {
   return (
     <div>
-        <div id="leftside">
+        <div className="leftside">
             
-            <nav className="navbar">
-             
-                  
-            <a href="#">HOME</a>
-            <a href="#">FURNITURE</a>
-            <a href="#">CONTACT</a>
-            <a href="#">ABOUT</a>
+            <div className="navbar">
+            <div className='home'><a href="#">HOME</a></div>
+            <div className='furniture'><a href="#">FURNITURE</a></div>
+            <div className='contact'><a href="#">CONTACT</a></div>
+            <div className='about'><a href="#">ABOUT</a></div>
               
-           </nav>
+           </div>
             
             
             <div className="image-grid">
                 <img className="img1" src={ottoman} alt=""/>
                 <img className="img2" src={sofa} alt=""/>
-                <img className="img3" src={sold_out} alt="SOLD OUT" />
+
+                <div className='sold-out-container'>
+                  <img className="img3" src={sold_out} alt=""/>
+                  <div className="sold-out-text">SOLD OUT</div>
+                  </div>
                      
             </div>
             
-            <div id="middle">
+            <div className="middle">
             <div className="home-text-section">
                 <h1 className="primary-heading">NORHOR SOFA</h1>
                 <p className="primary-text">The passage of time and its effect on the material, and the respect for the gloss produced by the natural years. British luxury furniture group's flagship design brand.
                 </p>
-         
                 <h1 className="price-text">$1,468</h1>
                 <button className="buyBtn">
                      BUY 
@@ -51,7 +52,7 @@ const Home = () => {
 
             </div>
 
-        <div id="rightside">
+        <div className="rightside">
             <h1 className="rightHead">FURNI</h1>
             <img className="div2img" src={sofa} alt=""/>
         </div>
